@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>René — Personal Website</title>
+  <meta name="description" content="Personal website of René.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-title"><a href="index.html">René</a></p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Hello, I'm René.</h1>
+      <p class="lede">
+        <!-- One short sentence about who you are. Replace this. -->
+        Researcher based in Halle, interested in &lt;your field&gt;.
+      </p>
+
+      <p>
+        <!-- Two or three sentences of introduction. Keep it brief. -->
+        Welcome to my personal website. This is where I'll share a little about
+        my work, my current research projects, and the occasional written note.
+        It's intentionally small for now and will grow over time.
+      </p>
+
+      <p>
+        You can read more <a href="about.html">about me</a>, look at my
+        <a href="research.html">research</a>, or
+        <a href="contact.html">get in touch</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      © <span id="year">2026</span> René ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

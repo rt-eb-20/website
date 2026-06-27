@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — René</title>
+  <meta name="description" content="Notes and writing by René.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-title"><a href="index.html">René</a></p>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Blog</h1>
+      <p class="lede">Occasional notes and writing.</p>
+
+      <p class="placeholder">
+        No posts yet. When you're ready, list each post below with a title,
+        date, and a link to its own page.
+      </p>
+
+      <!-- Example of how a post entry will look:
+      <h2><a href="posts/first-post.html">My first post</a></h2>
+      <p class="muted">26 June 2026</p>
+      <p>A short summary of the post…</p>
+      -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      © <span id="year">2026</span> René ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
