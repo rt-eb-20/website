@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>René — Personal Website</title>
-  <meta name="description" content="Personal website of René.">
+  <title>René Theuerkauf — Data Scientist &amp; Researcher</title>
+  <meta name="description" content="René Theuerkauf — data scientist and researcher in Halle (Saale), Germany. NLP, large language models, and the detection of fake and AI-generated content. Data science consulting for research and industry.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <p class="site-title"><a href="index.html">René</a></p>
+      <p class="site-title"><a href="index.html">René Theuerkauf<span class="role">Data Scientist · Researcher</span></a></p>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -23,31 +26,62 @@
 
   <main>
     <div class="wrap">
-      <h1>Hello, I'm René.</h1>
-      <p class="lede">
-        <!-- One short sentence about who you are. Replace this. -->
-        Researcher based in Halle (Saale),  Germany - interested in applied Data Science;.
+      <div class="hero">
+        <figure class="portrait-figure">
+          <img class="portrait" src="images/rene-portrait.jpg"
+               alt="Portrait of René Theuerkauf" width="190" height="190">
+        </figure>
+        <div class="hero-text">
+          <h1>Hello, I'm René.</h1>
+          <p class="lede">
+            Data scientist and researcher in Halle (Saale), Germany — working at the
+            intersection of natural language processing, large language models, and
+            empirical economics.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        I hold a doctorate (Dr. rer. pol.) from Martin-Luther-University
+        Halle-Wittenberg, where my research centred on the automated detection
+        and generation of fake reviews with machine learning. Today my work spans
+        the <strong>detection and evaluation of fake and AI-generated content</strong>,
+        generative AI, and applied data science — from research to industry
+        practice.
       </p>
 
       <p>
-        <!-- Two or three sentences of introduction. Keep it brief. -->
-        Welcome to my personal website. This is where I'll share a little about
-        my work, my current research projects, and the occasional written note.
-        It's intentionally small for now and will grow over time.
+        Alongside academic work, I build data science solutions and advise
+        organisations on NLP, machine learning, and how to run data science
+        projects well. Ten years of hands-on experience in customer analytics,
+        NLP pipelines, and model development sit behind that.
       </p>
 
-      <p>
-        You can read more <a href="about.html">about me</a>, look at my
-        <a href="research.html">research</a>, or
-        <a href="contact.html">get in touch</a>.
-      </p>
+      <ul class="tags" aria-label="Focus areas">
+        <li>NLP</li>
+        <li>Large Language Models</li>
+        <li>Machine Learning</li>
+        <li>Fake &amp; AI-content detection</li>
+        <li>Customer Analytics</li>
+        <li>Python</li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn" href="services.html">Data science services</a>
+        <a class="btn secondary" href="research.html">Research &amp; publications</a>
+        <a class="btn secondary" href="contact.html">Get in touch</a>
+      </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      © <span id="year">2026</span> René ·
-      <a href="contact.html">Contact</a>
+      © <span id="year">2026</span> René Theuerkauf ·
+      <a href="contact.html">Contact</a> ·
+      <a href="https://orcid.org/0000-0003-4208-4874" rel="me noopener" target="_blank">ORCID</a> ·
+      <a href="https://scholar.google.com/citations?user=UA4HU9OIRiUC&amp;hl=de" target="_blank" rel="noopener">Scholar</a> ·
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
     </div>
   </footer>
 

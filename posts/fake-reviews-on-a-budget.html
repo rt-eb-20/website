@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fake review detection on a budget — René Theuerkauf</title>
+  <meta name="description" content="Why small and medium-sized businesses can detect fake reviews without a big-tech budget — a plain-language take on my PACIS 2024 research.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-title"><a href="../index.html">René Theuerkauf<span class="role">Data Scientist · Researcher</span></a></p>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../research.html">Research</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../services.html">Services</a>
+        <a href="../blog.html" class="active">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="muted"><a href="../blog.html">← Blog</a></p>
+      <h1>Fake review detection on a budget</h1>
+      <p class="lede">Spotting fake reviews doesn't require a big-tech budget. For most SMEs, a modest, well-configured setup is enough.</p>
+      <p class="muted" style="font-family:var(--font-sans);font-size:0.85rem;">By René Theuerkauf</p>
+
+      <p>
+        Online reviews steer what people buy. That makes them a target: fake
+        reviews — written to praise or to sabotage — distort the picture, and
+        generative AI now produces them faster and cheaper than ever. Large
+        platforms throw serious resources at the problem. But what about the small
+        and medium-sized businesses that live and die by their ratings and don't
+        have a machine-learning team?
+      </p>
+
+      <h2>The question</h2>
+      <p>
+        My research with Prof. Ralf Peters asked a practical version of the
+        problem: <em>how good can fake review detection be on a limited budget,
+        and how should you configure it?</em> Rather than chasing state-of-the-art
+        accuracy at any cost, the goal was feasibility — a setup an SME could
+        actually run.
+      </p>
+
+      <h2>What the results suggest</h2>
+      <ul>
+        <li><strong>You don't need the biggest model.</strong> Detection quality
+        that is good enough for practice is reachable with modest, well-chosen
+        configurations — the last few points of accuracy cost far more than they
+        return.</li>
+        <li><strong>Domain matters.</strong> Models tuned to the kind of product
+        and language you actually deal with outperform generic ones. Specificity
+        beats size.</li>
+        <li><strong>Data quality carries the result.</strong> Clean, representative
+        training data does more for detection than model complexity does.</li>
+        <li><strong>It's an arms race.</strong> As AI writes more convincing fakes,
+        detection has to keep adapting — a setup is never "done".</li>
+      </ul>
+
+      <h2>What it means in practice</h2>
+      <p>
+        If you run an online shop or a review-driven service, the takeaway is
+        encouraging: fake review detection is not reserved for platforms with vast
+        budgets. A focused, domain-specific setup — with attention to data quality
+        and honest evaluation — gets you most of the way. The engineering effort is
+        real but bounded.
+      </p>
+
+      <div class="callout">
+        <p>Based on: Theuerkauf, R. &amp; Peters, R. (2024).
+        <em>Fake Review Detection on a Budget — Feasibility and Configuration for
+        SME.</em> PACIS 2024.
+        <a href="https://aisel.aisnet.org/pacis2024/track17_socmedia/track17_socmedia/8" target="_blank" rel="noopener">Read the paper</a>.
+        See more on the <a href="../research.html">research page</a>.</p>
+      </div>
+
+      <p class="muted">
+        Wondering whether this applies to your reviews? <a href="../contact.html">Get in touch</a> —
+        happy to give an honest read on feasibility.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      © <span id="year">2026</span> René Theuerkauf ·
+      <a href="../contact.html">Contact</a> ·
+      <a href="https://orcid.org/0000-0003-4208-4874" rel="me noopener" target="_blank">ORCID</a> ·
+      <a href="https://scholar.google.com/citations?user=UA4HU9OIRiUC&amp;hl=de" target="_blank" rel="noopener">Scholar</a> ·
+      <a href="../impressum.html">Impressum</a> ·
+      <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

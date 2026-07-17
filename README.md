@@ -9,11 +9,22 @@ Designed to grow over time.
 |------|---------|
 | `index.html` | Home page with a short intro |
 | `about.html` | About me |
-| `research.html` | Current research / projects |
-| `blog.html` | Blog (placeholder for now) |
+| `research.html` | Research focus and peer-reviewed publications |
+| `teaching.html` | University teaching (e-business, internet economics) |
+| `services.html` | Data science & consulting services |
+| `blog.html` | Blog index |
+| `posts/` | Individual blog posts |
 | `contact.html` | Contact details |
+| `impressum.html` | Legal notice (Impressum, German) |
+| `datenschutz.html` | Privacy policy (Datenschutz, German) |
 | `404.html` | Shown for unknown URLs |
 | `style.css` | Shared styling for every page |
+| `favicon.svg` | Browser-tab icon (RT monogram) |
+| `images/` | Site images — e.g. `rene-theuerkauf.jpg` portrait |
+
+> **Before publishing:** the legal pages (`impressum.html`, `datenschutz.html`)
+> are filled in (address, IONOS hosting) but remain templates — have them checked
+> and add a VAT ID in the Impressum if you have one.
 
 ## Editing
 
