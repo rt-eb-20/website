@@ -15,12 +15,23 @@ Designed to grow over time.
 | `blog.html` | Blog index |
 | `posts/` | Individual blog posts |
 | `contact.html` | Contact details |
-| `impressum.html` | Legal notice (Impressum, German) |
-| `datenschutz.html` | Privacy policy (Datenschutz, German) |
+| `impressum.html` | Legal notice (English; German statute references retained) |
+| `datenschutz.html` | Privacy policy (English) |
 | `404.html` | Shown for unknown URLs |
 | `style.css` | Shared styling for every page |
 | `favicon.svg` | Browser-tab icon (RT monogram) |
-| `images/` | Site images — e.g. `rene-theuerkauf.jpg` portrait |
+| `apple-touch-icon.png` | 180×180 icon for iOS/Android home screen |
+| `site.webmanifest` | Web app manifest (name, icons, theme colour) |
+| `robots.txt` | Crawl rules + sitemap pointer |
+| `sitemap.xml` | List of indexable URLs for search engines |
+| `images/` | Site images — `rene-portrait.jpg` (shown), `rene-theuerkauf.jpg` (source) |
+
+### SEO
+Each page has canonical + Open Graph/Twitter meta. Structured data (JSON-LD):
+Person/WebSite/ProfessionalService on the home page, an ItemList of publications
+on `research.html`, a service catalog on `services.html`, and BlogPosting +
+breadcrumbs on the post. After deploying, submit `sitemap.xml` in Google Search
+Console and Bing Webmaster Tools. If you add or rename pages, update `sitemap.xml`.
 
 > **Before publishing:** the legal pages (`impressum.html`, `datenschutz.html`)
 > are filled in (address, IONOS hosting) but remain templates — have them checked

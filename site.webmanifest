@@ -1,0 +1,13 @@
+{
+  "name": "René Theuerkauf",
+  "short_name": "Theuerkauf",
+  "description": "Data scientist and researcher — NLP, LLMs, and data science consulting.",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#6a4e2b",
+  "background_color": "#fbfaf7",
+  "display": "browser",
+  "start_url": "/"
+}
