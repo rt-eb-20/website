@@ -22,7 +22,12 @@
   </url>
   <url>
     <loc>https://theuerkauf.me/services.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theuerkauf.me/beratung.html</loc>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
