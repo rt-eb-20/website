@@ -14,6 +14,8 @@ Designed to grow over time.
 | `services.html` | Data science & consulting services |
 | `blog.html` | Blog index |
 | `posts/` | Individual blog posts |
+| `p/` | Poster & paper pages with permanent short links, e.g. `p/web26/` (see below) |
+| `tools/poster_tool.py` | Local helper: QR codes and preview images for `p/` (not needed online) |
 | `contact.html` | Contact details |
 | `impressum.html` | Legal notice (English; German statute references retained) |
 | `datenschutz.html` | Privacy policy (English) |
@@ -46,10 +48,49 @@ Console and Bing Webmaster Tools. If you add or rename pages, update `sitemap.xm
 - The navigation menu is repeated in each file's `<header>`. If you add a new
   page, copy an existing one and add a matching link to every menu.
 
+## Posters & papers (`p/`)
+
+Each poster or working paper gets its own folder under `p/` with a short,
+permanent URL, e.g. `https://theuerkauf.me/p/web26/`. That URL is in the QR
+code on the printed poster, so **never rename or delete a folder once the
+poster is out** — replace the files inside it instead.
+
+```
+p/web26/
+  index.html                    the page: title, abstract, downloads, version history
+  theuerkauf-web26-poster.pdf   poster
+  theuerkauf-web26-paper.pdf    paper
+  poster.webp                   preview on the page          ┐
+  poster-thumb.webp             thumbnail on research.html   ├ made by tools/poster_tool.py
+  og.jpg                        link preview (LinkedIn etc.) ┘
+  qr.svg / qr.png               QR code for print / slides (made by tools/poster_tool.py)
+```
+
+One-time setup for the helper: `python -m pip install segno pymupdf pillow`
+
+**Update a poster or paper** (the QR code stays the same):
+1. Export the poster from PowerPoint as PDF and save it over
+   `p/web26/theuerkauf-web26-poster.pdf` (paper: `theuerkauf-web26-paper.pdf`).
+2. Run `python tools/poster_tool.py images web26` (not needed for a paper-only change).
+3. In `p/web26/index.html`, change "Last updated" and add a line to the version
+   history (both marked `UPDATE`); on the card in `research.html`, change "updated …".
+4. Upload the changed files. GitHub Pages shows the new version within ~10 minutes.
+
+**Add a new one:**
+1. Pick a short slug (`<conference><yy>`, e.g. `amcis27`) and copy `p/web26/` to `p/<slug>/`.
+2. Replace the PDFs, then run `python tools/poster_tool.py images <slug>` and
+   `python tools/poster_tool.py qr <slug>`.
+3. Edit the texts in `p/<slug>/index.html` (including canonical/og URLs and the
+   JSON-LD), add a card to "Posters & papers" in `research.html` and the URL to `sitemap.xml`.
+4. Place `qr.svg` on the poster with its white margin. Scan distance is roughly
+   10 × the code's width: 7 cm works from ~70 cm, for 1–1.5 m use 10–15 cm.
+   Test with two phones before printing.
+
 ## Preview locally
 
-Just double-click `index.html` to open it in your browser. For a more accurate
-local server (optional), run this in the folder and visit http://localhost:8000:
+Just double-click `index.html` to open it in your browser. Links to `p/<slug>/`
+pages only work through the local server below (otherwise you get a folder
+listing). To run it, use this in the folder and visit http://localhost:8000:
 
 ```
 python -m http.server 8000
