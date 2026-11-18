@@ -399,16 +399,6 @@ hr {
   border-radius: 0 4px 4px 0;
 }
 
-.history { list-style: none; padding: 0; font-size: 0.95rem; }
-.history .when {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  letter-spacing: 0.03em;
-  margin-right: 0.6rem;
-}
-
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--color-rule);

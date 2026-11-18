@@ -57,7 +57,7 @@ poster is out** — replace the files inside it instead.
 
 ```
 p/web26/
-  index.html                    the page: title, abstract, downloads, version history
+  index.html                    the page: title, abstract, downloads, citation
   theuerkauf-web26-poster.pdf   poster
   theuerkauf-web26-paper.pdf    paper
   poster.webp                   preview on the page          ┐
@@ -72,8 +72,8 @@ One-time setup for the helper: `python -m pip install segno pymupdf pillow`
 1. Export the poster from PowerPoint as PDF and save it over
    `p/web26/theuerkauf-web26-poster.pdf` (paper: `theuerkauf-web26-paper.pdf`).
 2. Run `python tools/poster_tool.py images web26` (not needed for a paper-only change).
-3. In `p/web26/index.html`, change "Last updated" and add a line to the version
-   history (both marked `UPDATE`); on the card in `research.html`, change "updated …".
+3. In `p/web26/index.html`, change the "Last updated" date (marked `UPDATE`) and
+   `dateModified` in the JSON-LD; on the card in `research.html`, change "updated …".
 4. Upload the changed files. GitHub Pages shows the new version within ~10 minutes.
 
 **Add a new one:**
